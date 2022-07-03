@@ -1,5 +1,6 @@
 package com.verif.verificateurapp
 
+import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        requestPermissions(arrayOf(Manifest.permission.CAMERA), 102)
         lastName = findViewById(R.id.lastName)
 
         birthDay = findViewById(R.id.birthDay)
