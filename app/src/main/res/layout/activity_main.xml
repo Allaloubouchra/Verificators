@@ -4,173 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+
+    <TextView
+        android:id="@+id/personnelInfo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Information personnelle"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintEnd_toEndOf="parent"
-           android:layout_margin="10dp"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="-28dp">
-
-            <TextView
-                android:id="@+id/dose"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="309dp"
-                android:gravity="left"
-                android:text="dose:"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/date_vaccination"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="261dp"
-                android:gravity="left"
-                android:text="date de vaccination:"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/docteur"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="167dp"
-                android:gravity="left"
-                android:text="Docteur:"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/vaccination_center"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="211dp"
-                android:gravity="left"
-                android:text="Centre de vaccination:"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/personnelInfo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:gravity="center"
-                android:text="Information personnelle"
-                android:textColor="@color/blue"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/firstName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="596dp"
-                android:gravity="left"
-                android:text="Prénom:"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/lastName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="640dp"
-                android:gravity="left"
-                android:text="Nom:"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/birthDay"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="551dp"
-                android:gravity="left"
-                android:text="Date de naissance:"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/NumCarteIdentité"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="501dp"
-                android:gravity="left"
-                android:text="Numéro de la carte d'identité:"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/numCarteIdentité"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="455dp"
-                android:gravity="left"
-                android:text="Numéro de passeport:"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/vaccine"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="358dp"
-                android:gravity="left"
-                android:text="vaccin:"
-                android:textColor="@color/black"
-                android:textSize="20dp"/>
-
-            <TextView
-                android:id="@+id/vaccinationlInfo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="407dp"
-                android:gravity="center"
-                android:text="Information de vaccination"
-                android:textColor="@color/blue"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-
-            <Button
-                android:id="@+id/scannerButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="150dp"
-                android:layout_marginEnd="154dp"
-                android:layout_marginBottom="72dp"
-                android:gravity="center"
-                android:text="Scan"
-                android:backgroundTint="@color/blue"
-                app:layout_constraintBottom_toBottomOf="parent" />
-        </RelativeLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:text="Nom:"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
 
 
+
+    <TextView
+        android:id="@+id/birthDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:text="Date de naissance:"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/NumCarteIdentite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:text="Numéro de la carte d'identité:"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/passportNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:text="Numéro de passeport:"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/vaccinationlInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Information de vaccination"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vaccinationProofs"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/vaccinatin_proof_element" />
+
+    <Button
+        android:id="@+id/scannerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="154dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:text="Scan"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 
 </LinearLayout>

@@ -16,7 +16,7 @@ data class Appointment(
     val patient: Account,
     val doctor: Account?,
     val receptionist: Account?,
-    val vaccine: Vaccine,
+    val vaccine: ProofVaccine,
     val status: String,
     @SerializedName("get_status_display")
     val statusDisplay: String,

@@ -17,5 +17,5 @@ data class Proof(
     val get_gender_display: String,
     val vaccine_centre: String,
     val full_name: String,
-    val vaccines: List<Vaccine>
+    val vaccines: List<ProofVaccine>
 ) : Serializable

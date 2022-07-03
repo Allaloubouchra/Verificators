@@ -14,7 +14,7 @@ data class Center(
     val city: City,
     @SerializedName("working_hours")
     val workingHours: Array<WorkingHour>,
-    val vaccines: Array<Vaccine>,
+    val vaccines: Array<ProofVaccine>,
 ) : Serializable {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
@@ -70,7 +70,7 @@ data class WorkingHour(
     val dayOfWeekStr: String,
 ) : Serializable
 
-data class Vaccine(
+data class  Vaccine(
     val center: Long,
     val vaccine: Long,
     val available: Boolean,
